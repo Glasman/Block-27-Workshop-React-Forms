@@ -9,7 +9,9 @@ function SignUpForm() {
     console.log('yo')
 
   }
-  return <h2>Sign up!</h2>;
+  return (
+    <>
+  <h2>Sign up!</h2>
   <form onSubmit={handleSubmit}>
     <label>
       Username: <input value={username} onChange={(event) => setUsername(event.target.value)}/>
@@ -19,6 +21,8 @@ function SignUpForm() {
     </label>
     <button>Submit</button>
   </form>;
+  </>
+  )
 }
 
 export default SignUpForm;
